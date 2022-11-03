@@ -24,7 +24,7 @@ describe("test index file", () => {
 
 // third test - Negative numbers and numbers greater than 1000 should be ignored
 describe("test index file", () => {
-  test("a single number should return that number only", () => {
+  test("negative numbers and numbers greater than 1000 should be ignored", () => {
     expect(add("1, 2, 1000, 1009")).toBe(1003);
   });
 });
