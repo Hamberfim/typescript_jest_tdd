@@ -10,21 +10,21 @@ import { add } from "../src/index";
 
 // first test - Passing an empty string should result in zero.
 describe("test index file", () => {
-  test("empty string should result in zero", () => {
+  test("Empty string should result in zero", () => {
     expect(add("")).toBe(0);
   });
 });
 
 // second test - Passing a single number should result in the number itself.
 describe("test index file", () => {
-  test("a single number should return that number only", () => {
+  test("A single number should return that number only", () => {
     expect(add("9")).toBe(9);
   });
 });
 
 // third test - Negative numbers and numbers greater than 1000 should be ignored
 describe("test index file", () => {
-  test("negative numbers and numbers greater than 1000 should be ignored", () => {
+  test("Negative numbers and numbers greater than 1000 should be ignored", () => {
     expect(add("1, 2, 1000, 1009")).toBe(1003);
   });
 });
